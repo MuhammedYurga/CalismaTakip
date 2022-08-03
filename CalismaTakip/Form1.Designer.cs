@@ -34,8 +34,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.materialBlueGreyTheme1 = new Telerik.WinControls.Themes.MaterialBlueGreyTheme();
             this.button1 = new System.Windows.Forms.Button();
+            this.materialBlueGreyTheme1 = new Telerik.WinControls.Themes.MaterialBlueGreyTheme();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -67,6 +70,8 @@
             // 
             // splitPanel1
             // 
+            this.splitPanel1.Controls.Add(this.label2);
+            this.splitPanel1.Controls.Add(this.label1);
             this.splitPanel1.Controls.Add(this.pictureBox1);
             this.splitPanel1.Location = new System.Drawing.Point(0, 0);
             this.splitPanel1.Name = "splitPanel1";
@@ -113,6 +118,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -122,13 +128,43 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(538, 133);
+            this.button1.Location = new System.Drawing.Point(386, 100);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 56);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Arttır";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(1121, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "0";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(606, 100);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(206, 56);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Azalt";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(120, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 31);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "0";
             // 
             // Form1
             // 
@@ -144,6 +180,7 @@
             this.radSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
             this.splitPanel1.ResumeLayout(false);
+            this.splitPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
@@ -161,6 +198,9 @@
         private System.Windows.Forms.Panel panel1;
         private Telerik.WinControls.Themes.MaterialBlueGreyTheme materialBlueGreyTheme1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }
 
